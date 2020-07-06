@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		E48F3B5A24B172FF008683AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48F3B5924B172FF008683AB /* AppDelegate.swift */; };
 		E48F3B5C24B172FF008683AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48F3B5B24B172FF008683AB /* SceneDelegate.swift */; };
-		E48F3B5E24B172FF008683AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48F3B5D24B172FF008683AB /* ViewController.swift */; };
-		E48F3B6124B172FF008683AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E48F3B5F24B172FF008683AB /* Main.storyboard */; };
 		E48F3B6324B17309008683AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E48F3B6224B17309008683AB /* Assets.xcassets */; };
 		E48F3B6624B17309008683AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E48F3B6424B17309008683AB /* LaunchScreen.storyboard */; };
 		E48F3B7124B17309008683AB /* Twitter_LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48F3B7024B17309008683AB /* Twitter_LoginTests.swift */; };
 		E48F3B7C24B17309008683AB /* Twitter_LoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48F3B7B24B17309008683AB /* Twitter_LoginUITests.swift */; };
+		E48F3B8A24B17391008683AB /* LoginMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48F3B8924B17391008683AB /* LoginMainViewController.swift */; };
+		E4F706DC24B1853F004345BE /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F706DB24B1853F004345BE /* LoginController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +38,6 @@
 		E48F3B5624B172FF008683AB /* Twitter-Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Twitter-Login.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E48F3B5924B172FF008683AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E48F3B5B24B172FF008683AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E48F3B5D24B172FF008683AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E48F3B6024B172FF008683AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E48F3B6224B17309008683AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E48F3B6524B17309008683AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E48F3B6724B17309008683AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +47,8 @@
 		E48F3B7724B17309008683AB /* Twitter-LoginUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Twitter-LoginUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E48F3B7B24B17309008683AB /* Twitter_LoginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Twitter_LoginUITests.swift; sourceTree = "<group>"; };
 		E48F3B7D24B17309008683AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E48F3B8924B17391008683AB /* LoginMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMainViewController.swift; sourceTree = "<group>"; };
+		E4F706DB24B1853F004345BE /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +101,11 @@
 			children = (
 				E48F3B5924B172FF008683AB /* AppDelegate.swift */,
 				E48F3B5B24B172FF008683AB /* SceneDelegate.swift */,
-				E48F3B5D24B172FF008683AB /* ViewController.swift */,
-				E48F3B5F24B172FF008683AB /* Main.storyboard */,
 				E48F3B6224B17309008683AB /* Assets.xcassets */,
 				E48F3B6424B17309008683AB /* LaunchScreen.storyboard */,
 				E48F3B6724B17309008683AB /* Info.plist */,
+				E48F3B8924B17391008683AB /* LoginMainViewController.swift */,
+				E4F706DB24B1853F004345BE /* LoginController.swift */,
 			);
 			path = "Twitter-Login";
 			sourceTree = "<group>";
@@ -234,7 +234,6 @@
 			files = (
 				E48F3B6624B17309008683AB /* LaunchScreen.storyboard in Resources */,
 				E48F3B6324B17309008683AB /* Assets.xcassets in Resources */,
-				E48F3B6124B172FF008683AB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +258,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E48F3B5E24B172FF008683AB /* ViewController.swift in Sources */,
 				E48F3B5A24B172FF008683AB /* AppDelegate.swift in Sources */,
+				E4F706DC24B1853F004345BE /* LoginController.swift in Sources */,
+				E48F3B8A24B17391008683AB /* LoginMainViewController.swift in Sources */,
 				E48F3B5C24B172FF008683AB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,14 +297,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E48F3B5F24B172FF008683AB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E48F3B6024B172FF008683AB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E48F3B6424B17309008683AB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -444,7 +436,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.SenguttuvanNallappan.Twitter-Login";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -462,7 +454,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.SenguttuvanNallappan.Twitter-Login";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
