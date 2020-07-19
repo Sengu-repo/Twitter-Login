@@ -115,6 +115,7 @@ class MainViewController: UIViewController,LoginControllerDelegate {
         animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
         createView.view.layer.add(animation, forKey: "addCreateView")
         self.presentingViewController?.addChild(createView)
+        createView.view.frame = self.view.bounds
         self.createViewController = createView
         setupNavigationBar(style: .Create)
     }

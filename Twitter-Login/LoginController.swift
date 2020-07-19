@@ -181,7 +181,7 @@ class LoginController: UIViewController ,MainViewNavigationDelegate {
         stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor,constant: 16).isActive = true
         stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor,constant: -16).isActive = true
     
-        stackBottomconstant = stackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor,constant:8)
+        stackBottomconstant = stackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor,constant:-8)
         stackBottomconstant?.isActive = true
         
         let stackTopView = UIView()
